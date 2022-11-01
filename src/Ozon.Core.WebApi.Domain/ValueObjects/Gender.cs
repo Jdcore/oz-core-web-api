@@ -1,4 +1,4 @@
-namespace Ozon.Core.Web.WebApi.Domain.ValueObjects;
+namespace Ozon.Core.WebApi.Domain.ValueObjects;
 
 public enum Gender
 {

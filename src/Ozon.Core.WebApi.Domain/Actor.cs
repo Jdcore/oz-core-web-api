@@ -1,7 +1,7 @@
-using Ozon.Core.Web.WebApi.Domain.Abstractions;
-using Ozon.Core.Web.WebApi.Domain.ValueObjects;
+using Ozon.Core.WebApi.Domain.Abstractions;
+using Ozon.Core.WebApi.Domain.ValueObjects;
 
-namespace Ozon.Core.Web.WebApi.Domain;
+namespace Ozon.Core.WebApi.Domain;
 
 public sealed class Actor : DomainObject, IEquatable<Actor>
 {

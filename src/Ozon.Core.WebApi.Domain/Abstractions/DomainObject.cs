@@ -1,4 +1,4 @@
-namespace Ozon.Core.Web.WebApi.Domain.Abstractions;
+namespace Ozon.Core.WebApi.Domain.Abstractions;
 
 public abstract class DomainObject
 {
