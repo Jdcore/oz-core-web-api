@@ -25,6 +25,16 @@ public readonly struct Rate : IEquatable<Rate>
         return new Rate(a.Sum + b.Sum, a.Count + b.Count);
     }
 
+    public static bool operator ==(Rate a, Rate b)
+    {
+        return a.Equals(b);
+    }
+
+    public static bool operator !=(Rate a, Rate b)
+    {
+        return !a.Equals(b);
+    }
+
     public bool Equals(Rate other)
     {
         return Sum == other.Sum && Count == other.Count;

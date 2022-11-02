@@ -33,7 +33,7 @@ public class MovieController : Controller
     }
 
     [HttpPost]
-    public async Task<ActionResult<MovieModel>> Create([FromQuery]string name, [FromQuery]int year, CancellationToken cancellationToken)
+    public async Task<ActionResult<MovieModel>> Create([FromQuery]MovieCreateModel createModel, CancellationToken cancellationToken)
     {
         return await Task.Run(
             () =>
@@ -41,7 +41,9 @@ public class MovieController : Controller
                 return Ok(
                     new MovieModel()
                     {
-                        Id = Guid.NewGuid(), Name = name, Year = year
+                        Id = Guid.NewGuid(),
+                        Name = createModel.Name,
+                        Year = createModel.Year
                     });
             }, cancellationToken);
     }
