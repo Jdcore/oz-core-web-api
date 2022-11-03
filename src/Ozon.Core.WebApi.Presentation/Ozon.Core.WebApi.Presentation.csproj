@@ -10,4 +10,9 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Ozon.Core.WebApi.Abstractions\Ozon.Core.WebApi.Abstractions.csproj" />
+      <ProjectReference Include="..\Ozon.Core.WebApi.Domain\Ozon.Core.WebApi.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

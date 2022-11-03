@@ -14,6 +14,12 @@ public readonly struct Rate : IEquatable<Rate>
         Count = count;
     }
 
+    public Rate(int sum)
+    {
+        Sum = sum;
+        Count = 1;
+    }
+
     public Rate()
     {
         Sum = 0;
