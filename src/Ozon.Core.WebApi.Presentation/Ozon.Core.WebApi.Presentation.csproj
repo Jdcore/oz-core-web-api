@@ -13,6 +13,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Ozon.Core.WebApi.Abstractions\Ozon.Core.WebApi.Abstractions.csproj" />
       <ProjectReference Include="..\Ozon.Core.WebApi.Domain\Ozon.Core.WebApi.Domain.csproj" />
+      <ProjectReference Include="..\Ozon.Core.WebApi.Infrastructure\Ozon.Core.WebApi.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

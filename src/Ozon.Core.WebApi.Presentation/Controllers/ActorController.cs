@@ -84,6 +84,11 @@ public class ActorController : Controller
     [HttpPut("{id:guid}")]
     public async Task<ActionResult<ActorModel>> AddRate(Guid id, [FromQuery]int rate, CancellationToken cancellationToken)
     {
+        if (rate < 0 || rate > 10)
+        {
+            return BadRequest();
+        }
+
         try
         {
             Actor actor = await _actorRepository.Get(id, cancellationToken);
@@ -97,10 +102,6 @@ public class ActorController : Controller
         catch (DataNotFoundException)
         {
             return NotFound();
-        }
-        catch (Exception e)
-        {
-            return BadRequest();
         }
     }
 }

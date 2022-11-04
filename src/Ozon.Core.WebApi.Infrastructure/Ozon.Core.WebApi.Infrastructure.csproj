@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Ozon.Core.WebApi.Abstractions\Ozon.Core.WebApi.Abstractions.csproj" />
+      <ProjectReference Include="..\Ozon.Core.WebApi.Domain\Ozon.Core.WebApi.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dapper" Version="2.0.123" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
+      <PackageReference Include="Npgsql" Version="6.0.7" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Repositories\NpgsqlRepository.ActorRepository.cs">
+        <DependentUpon>NpgsqlRepository.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Repositories\NpgsqlRepository.MovieRepository.cs">
+        <DependentUpon>NpgsqlRepository.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

@@ -1,3 +1,5 @@
+using Ozon.Core.WebApi.Infrastructure.Repositories;
+
 namespace Ozon.Core.WebApi.Presentation;
 
 public class Program
@@ -7,6 +9,8 @@ public class Program
         WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
+
+        builder.Services.ConfigurePostgres();
 
         builder.Services.AddControllers();
 

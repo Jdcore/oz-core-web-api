@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ozon.Core.WebApi.Domain", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ozon.Core.WebApi.Abstractions", "src\Ozon.Core.WebApi.Abstractions\Ozon.Core.WebApi.Abstractions.csproj", "{8C605DBD-0980-4642-9C98-E42E2FD917DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ozon.Core.WebApi.Infrastructure", "src\Ozon.Core.WebApi.Infrastructure\Ozon.Core.WebApi.Infrastructure.csproj", "{AF503E6E-C6A3-4E48-9611-5FAF9ED09EFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,10 +34,15 @@ Global
 		{8C605DBD-0980-4642-9C98-E42E2FD917DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C605DBD-0980-4642-9C98-E42E2FD917DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C605DBD-0980-4642-9C98-E42E2FD917DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF503E6E-C6A3-4E48-9611-5FAF9ED09EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF503E6E-C6A3-4E48-9611-5FAF9ED09EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF503E6E-C6A3-4E48-9611-5FAF9ED09EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF503E6E-C6A3-4E48-9611-5FAF9ED09EFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9313599E-6120-4458-A78E-EFE7E60ED1E7} = {9DF828CA-00F8-4625-8979-11A975E10AB7}
 		{E23EAB86-1D00-42EB-BC30-DF7A887B7A27} = {9DF828CA-00F8-4625-8979-11A975E10AB7}
 		{8C605DBD-0980-4642-9C98-E42E2FD917DE} = {9DF828CA-00F8-4625-8979-11A975E10AB7}
+		{AF503E6E-C6A3-4E48-9611-5FAF9ED09EFD} = {9DF828CA-00F8-4625-8979-11A975E10AB7}
 	EndGlobalSection
 EndGlobal
